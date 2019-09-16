@@ -3,10 +3,10 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0999999999" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -157,27 +157,34 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:hankv1MuQJuV0CqCsikW7A" pcbguid="ce29a667-7c87-4a04-952d-57ed7ace71d9" lastpulledtime="" lastsyncedchangeguid="40b6a21d-4119-a6f9-f588-9a0e3242c747"/>
 <plain>
-<wire x1="0" y1="0" x2="80" y2="0" width="0" layer="20"/>
-<wire x1="80" y1="0" x2="80" y2="10" width="0" layer="20"/>
-<wire x1="80" y1="10" x2="0" y2="10" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
+<wire x1="100" y1="0" x2="100" y2="10" width="0" layer="20"/>
+<wire x1="100" y1="10" x2="0" y2="10" width="0" layer="20"/>
 <wire x1="0" y1="10" x2="0" y2="0" width="0" layer="20"/>
-<text x="40" y="5" size="1.778" layer="21" font="vector" ratio="15" align="center">Ultimaker Print Core Cleaner</text>
-<text x="40" y="3" size="1.016" layer="21" font="vector" ratio="15" align="center">github.com/caselabbet/ultimaker_print_core_cleaner</text>
+<text x="50" y="5" size="1.778" layer="21" font="vector" ratio="15" align="center">Ultimaker Print Core Cleaner</text>
+<text x="50" y="3" size="1.016" layer="21" font="vector" ratio="15" align="center">github.com/caselabbet/ultimaker_print_core_cleaner</text>
 <circle x="5" y="5" radius="1.5" width="0.1" layer="20"/>
-<circle x="75" y="5" radius="1.5" width="0.1" layer="20"/>
-<text x="65" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Outside Cleaning</text>
-<text x="15" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Inside Cleaning</text>
-<text x="15" y="1.9" size="0.8128" layer="21" font="vector" ratio="15" distance="220" rot="R90" align="center">Heat1
-Heat2
-Data
+<circle x="95" y="5" radius="1.5" width="0.1" layer="20"/>
+<text x="20" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Outside Cleaning</text>
+<text x="80" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Inside Cleaning</text>
+<text x="20" y="1.9" size="0.8128" layer="21" font="vector" ratio="20" distance="210" rot="R90" align="center">HEAT1
+HEAT2
+DATA
 SNS1
 SNS2</text>
-<text x="65" y="2" size="0.8128" layer="21" font="vector" ratio="15" distance="220" rot="SR270" align="center">Heat1
-Heat2
-Data
+<text x="80" y="1.9" size="0.8128" layer="21" font="vector" ratio="20" distance="210" rot="SR270" align="center">HEAT1
+HEAT2
+DATA
 SNS1
 SNS2</text>
+<text x="21" y="6.25" size="1.27" layer="22" font="vector" ratio="15" distance="100" rot="MR0" align="center">Created by: Isak Åslund
+Autumn 2019 | Sweden</text>
+<wire x1="9" y1="3.5" x2="9" y2="9" width="0.254" layer="22"/>
+<wire x1="9" y1="9" x2="33" y2="9" width="0.254" layer="22"/>
+<wire x1="33" y1="9" x2="33" y2="3.5" width="0.254" layer="22"/>
+<wire x1="33" y1="3.5" x2="9" y2="3.5" width="0.254" layer="22"/>
 </plain>
 <libraries>
 <library name="CASE-JST" urn="urn:adsk.eagle:library:5637561">
@@ -217,7 +224,7 @@ SNS2</text>
 </library>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="ULTIMAKER_PRINTCORE_CONNECTOR" library_version="15" library_locally_modified="yes">
+<package name="ULTIMAKER_PRINTCORE_CONNECTOR" urn="urn:adsk.eagle:footprint:13320955/1" library_version="17">
 <smd name="DATA" x="0" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
 <smd name="HEATER@2" x="2.54" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
 <smd name="HEATER@1" x="5.08" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
@@ -241,6 +248,13 @@ SNS2</text>
 <wire x1="3.81" y1="0.889" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="ULTIMAKER_PRINTCORE_CONNECTOR" urn="urn:adsk.eagle:package:13320957/2" type="model" library_version="17">
+<packageinstances>
+<packageinstance name="ULTIMAKER_PRINTCORE_CONNECTOR"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -435,117 +449,120 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="ULTIMAKER_PRINTCORE_CONNECTOR" value="ULTIMAKER_PRINTCORE_CONNNECTOR" x="65" y="5" smashed="yes"/>
-<element name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="ULTIMAKER_PRINTCORE_CONNECTOR" value="ULTIMAKER_PRINTCORE_CONNNECTOR" x="15" y="5" smashed="yes" rot="R180"/>
-<element name="CONNECTOR" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" package="S10B-EH" package3d_urn="urn:adsk.eagle:package:5644967/1" value="EH_10_Side" x="40" y="7" smashed="yes" rot="MR180"/>
+<element name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="ULTIMAKER_PRINTCORE_CONNECTOR" package3d_urn="urn:adsk.eagle:package:13320957/2" value="ULTIMAKER_PRINTCORE_CONNNECTOR" x="80" y="5" smashed="yes"/>
+<element name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="ULTIMAKER_PRINTCORE_CONNECTOR" package3d_urn="urn:adsk.eagle:package:13320957/2" value="ULTIMAKER_PRINTCORE_CONNNECTOR" x="20" y="5" smashed="yes" rot="R180"/>
+<element name="CONNECTOR" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" package="S10B-EH" package3d_urn="urn:adsk.eagle:package:5644967/1" override_package3d_urn="urn:adsk.eagle:package:13316669/3" override_package_urn="urn:adsk.eagle:footprint:5644949/1" value="EH_10_Side" x="50" y="7" smashed="yes" rot="MR180"/>
 </elements>
 <signals>
 <signal name="HEATER_1_R">
 <contactref element="U$3" pad="HEATER@1"/>
 <contactref element="CONNECTOR" pad="10"/>
-<wire x1="69.1" y1="8.3" x2="52.55" y2="8.3" width="1.27" layer="1"/>
-<wire x1="51.25" y1="7" x2="52.55" y2="8.3" width="1.27" layer="1"/>
-<wire x1="69.1" y1="8.3" x2="70.1" y2="7.3" width="1.27" layer="1"/>
-<wire x1="70.1" y1="7.3" x2="70.1" y2="5.02" width="1.27" layer="1"/>
-<wire x1="70.1" y1="5.02" x2="70.08" y2="5" width="1.27" layer="1"/>
+<wire x1="62.55" y1="8.3" x2="61.25" y2="7" width="1.27" layer="1"/>
+<wire x1="85.1" y1="7.3" x2="84.1" y2="8.3" width="1.27" layer="1"/>
+<wire x1="85.1" y1="7.3" x2="85.1" y2="5.02" width="1.016" layer="1"/>
+<wire x1="85.1" y1="5.02" x2="85.08" y2="5" width="1.016" layer="1"/>
+<wire x1="84.1" y1="8.3" x2="62.55" y2="8.3" width="1.27" layer="1"/>
 </signal>
 <signal name="HEATER_2_R">
 <contactref element="U$3" pad="HEATER@2"/>
 <contactref element="CONNECTOR" pad="9"/>
-<wire x1="50.35" y1="5.2" x2="48.75" y2="6.8" width="1.27" layer="1"/>
-<wire x1="48.75" y1="7" x2="48.75" y2="6.8" width="1.27" layer="1"/>
-<wire x1="67.54" y1="6.56" x2="67.54" y2="5" width="1.27" layer="1"/>
-<wire x1="50.35" y1="5.2" x2="52.2" y2="5.2" width="1.27" layer="1"/>
-<wire x1="52.2" y1="5.2" x2="53.8776" y2="6.8776" width="1.27" layer="1"/>
-<wire x1="53.8776" y1="6.8776" x2="67.2224" y2="6.8776" width="1.27" layer="1"/>
-<wire x1="67.2224" y1="6.8776" x2="67.54" y2="6.56" width="1.27" layer="1"/>
+<wire x1="60.35" y1="5.2" x2="58.75" y2="6.8" width="1.27" layer="1"/>
+<wire x1="58.75" y1="7" x2="58.75" y2="6.8" width="1.27" layer="1"/>
+<wire x1="82.54" y1="6.56" x2="82.54" y2="5" width="1.016" layer="1"/>
+<wire x1="60.35" y1="5.2" x2="62.2" y2="5.2" width="1.27" layer="1"/>
+<wire x1="62.2" y1="5.2" x2="63.8776" y2="6.8776" width="1.27" layer="1"/>
+<wire x1="82.2224" y1="6.8776" x2="82.54" y2="6.56" width="1.27" layer="1"/>
+<wire x1="63.8776" y1="6.8776" x2="82.2224" y2="6.8776" width="1.27" layer="1"/>
 </signal>
 <signal name="DATA_R">
 <contactref element="U$3" pad="DATA"/>
 <contactref element="CONNECTOR" pad="8"/>
-<wire x1="46.25" y1="7" x2="51.98" y2="1.27" width="0.508" layer="16"/>
-<wire x1="63.3" y1="1.27" x2="51.98" y2="1.27" width="0.508" layer="16"/>
-<via x="63.8" y="2.4" extent="1-16" drill="0.35"/>
-<wire x1="65" y1="3.2" x2="64.2" y2="2.4" width="0.508" layer="1"/>
-<wire x1="63.8" y1="2.4" x2="64.2" y2="2.4" width="0.508" layer="1"/>
-<wire x1="65" y1="3.2" x2="65" y2="5" width="0.508" layer="1"/>
-<wire x1="63.8" y1="2.4" x2="63.8" y2="1.77" width="0.508" layer="16"/>
-<wire x1="63.8" y1="1.77" x2="63.3" y2="1.27" width="0.508" layer="16"/>
+<wire x1="61.98" y1="1.27" x2="56.25" y2="7" width="0.508" layer="16"/>
+<via x="78.8" y="2.4" extent="1-16" drill="0.35"/>
+<wire x1="80" y1="3.2" x2="79.2" y2="2.4" width="0.508" layer="1"/>
+<wire x1="78.8" y1="2.4" x2="79.2" y2="2.4" width="0.508" layer="1"/>
+<wire x1="80" y1="3.2" x2="80" y2="5" width="0.508" layer="1"/>
+<wire x1="78.8" y1="2.4" x2="78.13" y2="2.4" width="0.508" layer="16"/>
+<wire x1="78.13" y1="2.4" x2="77" y2="1.27" width="0.508" layer="16"/>
+<wire x1="77" y1="1.27" x2="61.98" y2="1.27" width="0.508" layer="16"/>
 </signal>
 <signal name="PT100_1_R">
 <contactref element="U$3" pad="PT100@1"/>
 <contactref element="CONNECTOR" pad="7"/>
-<wire x1="43.75" y1="7" x2="43.75" y2="6.3" width="0.508" layer="1"/>
-<wire x1="47.55" y1="2.5" x2="43.75" y2="6.3" width="0.508" layer="1"/>
-<wire x1="47.55" y1="2.5" x2="61.86" y2="2.5" width="0.508" layer="1"/>
-<wire x1="62.46" y1="3.1" x2="62.46" y2="5" width="0.508" layer="1"/>
-<wire x1="62.46" y1="3.1" x2="61.86" y2="2.5" width="0.508" layer="1"/>
+<wire x1="53.75" y1="7" x2="53.75" y2="6.3" width="0.508" layer="1"/>
+<wire x1="57.025" y1="3.025" x2="53.75" y2="6.3" width="0.508" layer="1"/>
+<wire x1="77.46" y1="3.1" x2="77.46" y2="5" width="0.508" layer="1"/>
+<wire x1="76.86" y1="2.5" x2="77.46" y2="3.1" width="0.508" layer="1"/>
+<wire x1="57.025" y1="3.025" x2="57.55" y2="2.5" width="0.508" layer="1"/>
+<wire x1="57.55" y1="2.5" x2="76.86" y2="2.5" width="0.508" layer="1"/>
 </signal>
 <signal name="PT100_2_R">
 <contactref element="U$3" pad="PT100@2"/>
 <contactref element="CONNECTOR" pad="6"/>
-<wire x1="41.25" y1="7" x2="42.45" y2="8.2" width="0.508" layer="1"/>
-<wire x1="44.2396" y1="8.2" x2="45.1396" y2="7.3" width="0.508" layer="1"/>
-<wire x1="42.45" y1="8.2" x2="44.2396" y2="8.2" width="0.508" layer="1"/>
-<wire x1="45.1396" y1="7.3" x2="45.1396" y2="5.84435" width="0.508" layer="1"/>
-<wire x1="59.92" y1="3.72" x2="59.92" y2="5" width="0.508" layer="1"/>
-<wire x1="45.1396" y1="5.84435" x2="47.82355" y2="3.1604" width="0.508" layer="1"/>
-<wire x1="47.82355" y1="3.1604" x2="59.3604" y2="3.1604" width="0.508" layer="1"/>
-<wire x1="59.3604" y1="3.1604" x2="59.92" y2="3.72" width="0.508" layer="1"/>
+<wire x1="51.25" y1="7" x2="52.45" y2="8.2" width="0.508" layer="1"/>
+<wire x1="54.2396" y1="8.2" x2="55.1396" y2="7.3" width="0.508" layer="1"/>
+<wire x1="52.45" y1="8.2" x2="54.2396" y2="8.2" width="0.508" layer="1"/>
+<wire x1="55.1396" y1="7.3" x2="55.1396" y2="5.84435" width="0.508" layer="1"/>
+<wire x1="74.92" y1="3.72" x2="74.92" y2="5" width="0.508" layer="1"/>
+<wire x1="57.82355" y1="3.1604" x2="55.1396" y2="5.84435" width="0.508" layer="1"/>
+<wire x1="74.92" y1="3.72" x2="74.3604" y2="3.1604" width="0.508" layer="1"/>
+<wire x1="74.3604" y1="3.1604" x2="57.82355" y2="3.1604" width="0.508" layer="1"/>
 </signal>
 <signal name="DATA_L">
 <contactref element="U$1" pad="DATA"/>
 <contactref element="CONNECTOR" pad="3"/>
-<wire x1="33.75" y1="7" x2="28.02" y2="1.27" width="0.508" layer="16"/>
-<wire x1="16.6" y1="1.27" x2="28.02" y2="1.27" width="0.508" layer="16"/>
-<via x="16.1" y="2.5" extent="1-16" drill="0.35"/>
-<wire x1="15.6" y1="2.5" x2="15" y2="3.1" width="0.508" layer="1"/>
-<wire x1="15" y1="3.1" x2="15" y2="5" width="0.508" layer="1"/>
-<wire x1="16.1" y1="2.5" x2="15.6" y2="2.5" width="0.508" layer="1"/>
-<wire x1="16.1" y1="2.5" x2="16.1" y2="1.77" width="0.508" layer="16"/>
-<wire x1="16.1" y1="1.77" x2="16.6" y2="1.27" width="0.508" layer="16"/>
+<wire x1="43.75" y1="7" x2="38.02" y2="1.27" width="0.508" layer="16"/>
+<via x="21.1" y="2.5" extent="1-16" drill="0.35"/>
+<wire x1="20.6" y1="2.5" x2="20" y2="3.1" width="0.508" layer="1"/>
+<wire x1="20" y1="3.1" x2="20" y2="5" width="0.508" layer="1"/>
+<wire x1="21.1" y1="2.5" x2="20.6" y2="2.5" width="0.508" layer="1"/>
+<wire x1="23.2" y1="1.27" x2="21.97" y2="2.5" width="0.508" layer="16"/>
+<wire x1="21.1" y1="2.5" x2="21.97" y2="2.5" width="0.508" layer="16"/>
+<wire x1="38.02" y1="1.27" x2="23.2" y2="1.27" width="0.508" layer="16"/>
 </signal>
 <signal name="PT100_1_L">
 <contactref element="U$1" pad="PT100@1"/>
 <contactref element="CONNECTOR" pad="4"/>
-<wire x1="17.54" y1="5" x2="17.54" y2="3.36" width="0.508" layer="1"/>
-<wire x1="18.4604" y1="2.4396" x2="32.47355" y2="2.4396" width="0.508" layer="1"/>
-<wire x1="36.25" y1="6.21605" x2="36.25" y2="7" width="0.508" layer="1"/>
-<wire x1="17.54" y1="3.36" x2="18.4604" y2="2.4396" width="0.508" layer="1"/>
-<wire x1="32.47355" y1="2.4396" x2="36.25" y2="6.21605" width="0.508" layer="1"/>
+<wire x1="22.54" y1="5" x2="22.54" y2="3.36" width="0.508" layer="1"/>
+<wire x1="46.25" y1="6.21605" x2="46.25" y2="7" width="0.508" layer="1"/>
+<wire x1="22.54" y1="3.36" x2="23.45" y2="2.45" width="0.508" layer="1"/>
+<wire x1="42.47355" y1="2.4396" x2="46.25" y2="6.21605" width="0.508" layer="1"/>
+<wire x1="23.45" y1="2.45" x2="25.11605" y2="2.45" width="0.508" layer="1"/>
+<wire x1="25.11605" y1="2.45" x2="25.12645" y2="2.4396" width="0.508" layer="1"/>
+<wire x1="25.12645" y1="2.4396" x2="42.47355" y2="2.4396" width="0.508" layer="1"/>
 </signal>
 <signal name="PT100_2_L">
 <contactref element="U$1" pad="PT100@2"/>
 <contactref element="CONNECTOR" pad="5"/>
-<wire x1="38.75" y1="7" x2="37.55" y2="8.2" width="0.508" layer="1"/>
-<wire x1="35.87965625" y1="8.2" x2="35" y2="7.32034375" width="0.508" layer="1"/>
-<wire x1="35" y1="7.32034375" x2="35" y2="5.9" width="0.508" layer="1"/>
-<wire x1="35" y1="5.9" x2="32.2" y2="3.1" width="0.508" layer="1"/>
-<wire x1="20.4" y1="3.1" x2="20" y2="3.5" width="0.508" layer="1"/>
-<wire x1="20" y1="3.5" x2="20" y2="4.92" width="0.508" layer="1"/>
-<wire x1="20" y1="4.92" x2="20.08" y2="5" width="0.508" layer="1"/>
-<wire x1="37.55" y1="8.2" x2="35.87965625" y2="8.2" width="0.508" layer="1"/>
-<wire x1="32.2" y1="3.1" x2="20.4" y2="3.1" width="0.508" layer="1"/>
+<wire x1="48.75" y1="7" x2="47.55" y2="8.2" width="0.508" layer="1"/>
+<wire x1="45.87965625" y1="8.2" x2="45" y2="7.32034375" width="0.508" layer="1"/>
+<wire x1="45" y1="7.32034375" x2="45" y2="5.9" width="0.508" layer="1"/>
+<wire x1="42.2" y1="3.1" x2="45" y2="5.9" width="0.508" layer="1"/>
+<wire x1="25.4" y1="3.1" x2="25" y2="3.5" width="0.508" layer="1"/>
+<wire x1="25" y1="3.5" x2="25" y2="4.92" width="0.508" layer="1"/>
+<wire x1="25" y1="4.92" x2="25.08" y2="5" width="0.508" layer="1"/>
+<wire x1="47.55" y1="8.2" x2="45.87965625" y2="8.2" width="0.508" layer="1"/>
+<wire x1="25.4" y1="3.1" x2="42.2" y2="3.1" width="0.508" layer="1"/>
 </signal>
 <signal name="HEATER_2_L">
 <contactref element="U$1" pad="HEATER@2"/>
 <contactref element="CONNECTOR" pad="2"/>
-<wire x1="12.46" y1="5" x2="12.46" y2="6.4376" width="1.27" layer="1"/>
-<wire x1="12.46" y1="6.4376" x2="12.9" y2="6.8776" width="1.27" layer="1"/>
-<wire x1="12.9" y1="6.8776" x2="26.0224" y2="6.8776" width="1.27" layer="1"/>
-<wire x1="27.7" y1="5.2" x2="30.4" y2="5.2" width="1.27" layer="1"/>
-<wire x1="30.4" y1="5.2" x2="31.25" y2="6.05" width="1.27" layer="1"/>
-<wire x1="31.25" y1="6.05" x2="31.25" y2="7" width="1.27" layer="1"/>
-<wire x1="26.0224" y1="6.8776" x2="27.7" y2="5.2" width="1.27" layer="1"/>
+<wire x1="17.46" y1="5" x2="17.46" y2="6.4376" width="1.016" layer="1"/>
+<wire x1="37.7" y1="5.2" x2="40.4" y2="5.2" width="1.27" layer="1"/>
+<wire x1="40.4" y1="5.2" x2="41.25" y2="6.05" width="1.27" layer="1"/>
+<wire x1="41.25" y1="6.05" x2="41.25" y2="7" width="1.27" layer="1"/>
+<wire x1="37.7" y1="5.2" x2="36.0224" y2="6.8776" width="1.27" layer="1"/>
+<wire x1="36.0224" y1="6.8776" x2="17.9" y2="6.8776" width="1.27" layer="1"/>
+<wire x1="17.9" y1="6.8776" x2="17.46" y2="6.4376" width="1.27" layer="1"/>
 </signal>
 <signal name="HEATER_1_L">
 <contactref element="U$1" pad="HEATER@1"/>
 <contactref element="CONNECTOR" pad="1"/>
-<wire x1="28.75" y1="7" x2="27.45" y2="8.3" width="1.27" layer="1"/>
-<wire x1="27.45" y1="8.3" x2="10.7" y2="8.3" width="1.27" layer="1"/>
-<wire x1="10.7" y1="8.3" x2="9.9" y2="7.5" width="1.27" layer="1"/>
-<wire x1="9.9" y1="7.5" x2="9.9" y2="5.02" width="1.27" layer="1"/>
-<wire x1="9.9" y1="5.02" x2="9.92" y2="5" width="1.27" layer="1"/>
+<wire x1="38.75" y1="7" x2="37.45" y2="8.3" width="1.27" layer="1"/>
+<wire x1="15.7" y1="8.3" x2="14.9" y2="7.5" width="1.27" layer="1"/>
+<wire x1="14.9" y1="7.5" x2="14.9" y2="5.02" width="1.016" layer="1"/>
+<wire x1="14.9" y1="5.02" x2="14.92" y2="5" width="1.016" layer="1"/>
+<wire x1="37.45" y1="8.3" x2="15.7" y2="8.3" width="1.27" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -568,6 +585,11 @@ of those online libraries will not be understood (or retained)
 with this version.
 </note>
 <note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
@@ -576,6 +598,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

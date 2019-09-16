@@ -320,7 +320,7 @@ DIN A4, landscape with extra doc field</description>
 </library>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="ULTIMAKER_PRINTCORE_CONNECTOR" library_version="15" library_locally_modified="yes">
+<package name="ULTIMAKER_PRINTCORE_CONNECTOR" urn="urn:adsk.eagle:footprint:13320955/1" library_version="17">
 <smd name="DATA" x="0" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
 <smd name="HEATER@2" x="2.54" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
 <smd name="HEATER@1" x="5.08" y="0" dx="2.1" dy="1" layer="1" rot="R90"/>
@@ -344,9 +344,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="3.81" y1="0.889" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="ULTIMAKER_PRINTCORE_CONNECTOR" urn="urn:adsk.eagle:package:13320957/2" type="model" library_version="17">
+<packageinstances>
+<packageinstance name="ULTIMAKER_PRINTCORE_CONNECTOR"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="ULTIMAKER_PRINTCORE_CONNECTOR" library_version="15" library_locally_modified="yes">
+<symbol name="ULTIMAKER_PRINTCORE_CONNECTOR" urn="urn:adsk.eagle:symbol:13320953/1" library_version="17">
 <pin name="DATA" x="0" y="0" visible="off" length="short"/>
+<pin name="HEATER@2" x="0" y="5.08" visible="off" length="short"/>
+<pin name="PT100@1" x="0" y="-5.08" visible="off" length="short"/>
+<pin name="HEATER@1" x="0" y="10.16" visible="off" length="short"/>
+<pin name="PT100@2" x="0" y="-10.16" visible="off" length="short"/>
 <wire x1="2.54" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
 <wire x1="3.81" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-1.27" x2="6.35" y2="2.54" width="0.254" layer="94"/>
@@ -354,13 +365,6 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="7.62" y1="-1.27" x2="8.89" y2="1.27" width="0.254" layer="94"/>
 <wire x1="8.89" y1="1.27" x2="10.16" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="11.43" y2="0" width="0.254" layer="94"/>
-<circle x="11.43" y="0" radius="0.4" width="0.8" layer="94"/>
-<text x="12.7" y="0" size="1.778" layer="97" distance="185" align="center-left">Heater 1
-Heater 2
-Data
-PT100 1
-PT100 2</text>
-<pin name="HEATER@2" x="0" y="5.08" visible="off" length="short"/>
 <wire x1="2.54" y1="5.08" x2="3.81" y2="6.35" width="0.254" layer="94"/>
 <wire x1="3.81" y1="6.35" x2="5.08" y2="3.81" width="0.254" layer="94"/>
 <wire x1="5.08" y1="3.81" x2="6.35" y2="7.62" width="0.254" layer="94"/>
@@ -368,8 +372,6 @@ PT100 2</text>
 <wire x1="7.62" y1="3.81" x2="8.89" y2="6.35" width="0.254" layer="94"/>
 <wire x1="8.89" y1="6.35" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="11.43" y2="5.08" width="0.254" layer="94"/>
-<circle x="11.43" y="5.08" radius="0.4" width="0.8" layer="94"/>
-<pin name="PT100@1" x="0" y="-5.08" visible="off" length="short"/>
 <wire x1="2.54" y1="-5.08" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-3.81" x2="5.08" y2="-6.35" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-6.35" x2="6.35" y2="-2.54" width="0.254" layer="94"/>
@@ -377,8 +379,6 @@ PT100 2</text>
 <wire x1="7.62" y1="-6.35" x2="8.89" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="8.89" y1="-3.81" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="11.43" y2="-5.08" width="0.254" layer="94"/>
-<circle x="11.43" y="-5.08" radius="0.4" width="0.8" layer="94"/>
-<pin name="HEATER@1" x="0" y="10.16" visible="off" length="short"/>
 <wire x1="2.54" y1="10.16" x2="3.81" y2="11.43" width="0.254" layer="94"/>
 <wire x1="3.81" y1="11.43" x2="5.08" y2="8.89" width="0.254" layer="94"/>
 <wire x1="5.08" y1="8.89" x2="6.35" y2="12.7" width="0.254" layer="94"/>
@@ -386,8 +386,6 @@ PT100 2</text>
 <wire x1="7.62" y1="8.89" x2="8.89" y2="11.43" width="0.254" layer="94"/>
 <wire x1="8.89" y1="11.43" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="11.43" y2="10.16" width="0.254" layer="94"/>
-<circle x="11.43" y="10.16" radius="0.4" width="0.8" layer="94"/>
-<pin name="PT100@2" x="0" y="-10.16" visible="off" length="short"/>
 <wire x1="2.54" y1="-10.16" x2="3.81" y2="-8.89" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-8.89" x2="5.08" y2="-11.43" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-11.43" x2="6.35" y2="-7.62" width="0.254" layer="94"/>
@@ -395,11 +393,20 @@ PT100 2</text>
 <wire x1="7.62" y1="-11.43" x2="8.89" y2="-8.89" width="0.254" layer="94"/>
 <wire x1="8.89" y1="-8.89" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="11.43" y2="-10.16" width="0.254" layer="94"/>
+<circle x="11.43" y="0" radius="0.4" width="0.8" layer="94"/>
+<circle x="11.43" y="5.08" radius="0.4" width="0.8" layer="94"/>
+<circle x="11.43" y="-5.08" radius="0.4" width="0.8" layer="94"/>
+<circle x="11.43" y="10.16" radius="0.4" width="0.8" layer="94"/>
 <circle x="11.43" y="-10.16" radius="0.4" width="0.8" layer="94"/>
+<text x="12.7" y="0" size="1.778" layer="97" distance="185" align="center-left">Heater 1
+Heater 2
+Data
+PT100 1
+PT100 2</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ULTIMAKER_PRINTCORE_CONNNECTOR" library_version="15" library_locally_modified="yes">
+<deviceset name="ULTIMAKER_PRINTCORE_CONNNECTOR" urn="urn:adsk.eagle:component:13320959/2" library_version="17">
 <description>Uses spring fingers 1.8H: https://se.rs-online.com/web/p/grounding-contacts/1870932/</description>
 <gates>
 <gate name="G$1" symbol="ULTIMAKER_PRINTCORE_CONNECTOR" x="0" y="0"/>
@@ -413,6 +420,9 @@ PT100 2</text>
 <connect gate="G$1" pin="PT100@1" pad="PT100@1"/>
 <connect gate="G$1" pin="PT100@2" pad="PT100@2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13320957/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -432,9 +442,9 @@ PT100 2</text>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="ULTIMAKER_PRINTCORE_CONNNECTOR" device=""/>
-<part name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="ULTIMAKER_PRINTCORE_CONNNECTOR" device=""/>
-<part name="CONNECTOR" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" deviceset="EH_S10B-EH" device="" package3d_urn="urn:adsk.eagle:package:5644967/1" value="EH_10_Side"/>
+<part name="U$3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="ULTIMAKER_PRINTCORE_CONNNECTOR" device="" package3d_urn="urn:adsk.eagle:package:13320957/2"/>
+<part name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="ULTIMAKER_PRINTCORE_CONNNECTOR" device="" package3d_urn="urn:adsk.eagle:package:13320957/2"/>
+<part name="CONNECTOR" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" deviceset="EH_S10B-EH" device="" package3d_urn="urn:adsk.eagle:package:5644967/1" override_package3d_urn="urn:adsk.eagle:package:13316669/3" override_package_urn="urn:adsk.eagle:footprint:5644949/1" value="EH_10_Side"/>
 </parts>
 <sheets>
 <sheet>
@@ -550,6 +560,9 @@ PT100 2</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
@@ -571,6 +584,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

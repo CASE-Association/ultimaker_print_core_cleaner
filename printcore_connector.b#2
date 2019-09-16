@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:hankv1MuQJuV0CqCsikW7A" pcbguid="ce29a667-7c87-4a04-952d-57ed7ace71d9" lastpulledtime="" lastsyncedchangeguid="61e22503-050e-7b38-32d9-1746b069a9b3"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:hankv1MuQJuV0CqCsikW7A" pcbguid="ce29a667-7c87-4a04-952d-57ed7ace71d9" lastpulledtime="" lastsyncedchangeguid="28e8376a-df81-6646-5b83-ac359ceeb517"/>
 <plain>
 <wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
 <wire x1="100" y1="0" x2="100" y2="10" width="0" layer="20"/>
@@ -167,8 +167,8 @@
 <text x="50" y="3" size="1.016" layer="21" font="vector" ratio="15" align="center">github.com/caselabbet/ultimaker_print_core_cleaner</text>
 <circle x="5" y="5" radius="1.5" width="0.1" layer="20"/>
 <circle x="95" y="5" radius="1.5" width="0.1" layer="20"/>
-<text x="20" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Outside Cleaning</text>
-<text x="80" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Inside Cleaning</text>
+<text x="80" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Outside Cleaning</text>
+<text x="20" y="8" size="1.016" layer="21" font="vector" ratio="15" rot="R180" align="center">Inside Cleaning</text>
 <text x="20" y="1.9" size="0.8128" layer="21" font="vector" ratio="20" distance="210" rot="R90" align="center">HEAT1
 HEAT2
 DATA
