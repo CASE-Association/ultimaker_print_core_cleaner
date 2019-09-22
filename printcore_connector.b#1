@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:hankv1MuQJuV0CqCsikW7A" pcbguid="ce29a667-7c87-4a04-952d-57ed7ace71d9" lastpulledtime="" lastsyncedchangeguid="61e22503-050e-7b38-32d9-1746b069a9b3"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:hankv1MuQJuV0CqCsikW7A" pcbguid="ce29a667-7c87-4a04-952d-57ed7ace71d9" lastpulledtime="" lastsyncedchangeguid="40b6a21d-4119-a6f9-f588-9a0e3242c747"/>
 <plain>
 <wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
 <wire x1="100" y1="0" x2="100" y2="10" width="0" layer="20"/>
@@ -185,6 +185,7 @@ Autumn 2019 | Sweden</text>
 <wire x1="9" y1="9" x2="33" y2="9" width="0.254" layer="22"/>
 <wire x1="33" y1="9" x2="33" y2="3.5" width="0.254" layer="22"/>
 <wire x1="33" y1="3.5" x2="9" y2="3.5" width="0.254" layer="22"/>
+<text x="5" y="8.2" size="1.27" layer="21" font="vector" ratio="15" align="center">Ø3mm</text>
 </plain>
 <libraries>
 <library name="CASE-JST" urn="urn:adsk.eagle:library:5637561">
@@ -566,8 +567,8 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8FFFFFF"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFF000000"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
