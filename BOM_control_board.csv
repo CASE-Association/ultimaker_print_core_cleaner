@@ -1,0 +1,17 @@
+Qty;Value;Device;Package;Parts;Description;VENDOR;Link
+2;120;R1206;R1206;R_SNS_L, R_SNS_R;Standard Chip RESISTOR 1206 (3216 Metric);mouser;https://www.mouser.se/ProductDetail/Vishay-Dale/RCS1206120RFKEA?qs=sGAEpiMZZMtlubZbdhIBIAh%252BOLxU8fCre2k6EOEIr7w=
+1;ARDUINO-NANO-3.0;ARDUINO-NANO-3.0;ARDUINO-NANO-3.0;M1;Arduino Nano 3.0 and compatible devices;case;-
+1;DC-DC-STEP-DOWN-LM2596;DC-DC-STEP-DOWN-LM2596;DC-DC-STEP-DOWN-LM2596;U$5;DC/DC Step-Down Regulator based on LM2596-ADJ chip;case;-
+2;DMG4496SSS;DMG4496SSS;SOIC127P600X175-8N;U$1, U$2;N-Channel Mosfetfor medium currents.;mouser;https://www.mouser.se/ProductDetail/Diodes-Incorporated/DMG4496SSS-13?qs=%2Fha2pyFaduhMHDCC7vy75OVcOyf1gthRASgFSURA7lDcGKdAnsvAvw%3D%3D
+2;DS2482-100;DS2482-100;SOIC127P600X175-8N;DS2482-100_L, DS2482-100_R;DS2482-100;mouser;https://www.mouser.se/ProductDetail/Maxim-Integrated/DS2482S-100%2bTR?qs=sGAEpiMZZMuuBt6TL7D%2F6B32qdxzCAj6
+1;EH_B10B-EH;EH_B10B-EH;B10B-EH;CON1;JST EH Connector, through hole, 10 pin, top entry;case;
+1;EH_B2B-EH;EH_B2B-EH;B2B-EH;BUTTON;JST EH Connector, through hole, 2 pin, top entry;case;
+1;EH_B4B-EH;EH_B4B-EH;B4B-EH;I2C;JST EH Connector, through hole, 4 pin, top entry;case;
+1;WE_694106301002;WE_694106301002;WE_694106301002;DC_JACK_24V;WE 694106301002, DC Power Jack;mouser;https://www.mouser.se/ProductDetail/Wurth-Elektronik/694106301002?qs=%2Fha2pyFaduhXlpvgZjVdDhj1qPEcc3pWKA30AY3Cc80gWzOpaIFzJw%3D%3D
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;

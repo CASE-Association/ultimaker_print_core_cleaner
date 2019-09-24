@@ -465,7 +465,7 @@
 </library>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:13374550/1" library_version="18">
+<package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:13374550/1" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <circle x="-2.7288" y="2.7036" radius="0.25" width="0" layer="21"/>
@@ -755,14 +755,14 @@ Buck</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13316051/2" type="model" library_version="18">
+<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13316051/2" type="model" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOIC127P600X175-8N"/>
 </packageinstances>
 </package3d>
-<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13374351/1" type="model" library_version="18">
+<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13374351/1" type="model" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -927,7 +927,8 @@ Buck</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DMG4496SSS" urn="urn:adsk.eagle:component:13320960/2" library_version="18">
+<deviceset name="DMG4496SSS" urn="urn:adsk.eagle:component:13320960/2" locally_modified="yes" library_version="23" library_locally_modified="yes">
+<description>N-Channel Mosfetfor medium currents.</description>
 <gates>
 <gate name="G$1" symbol="MOSFET_N" x="0" y="0"/>
 </gates>
@@ -942,7 +943,9 @@ Buck</text>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:13316051/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VENDOR" value="RS" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1000,7 +1003,7 @@ Buck</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS2482-100" urn="urn:adsk.eagle:component:13374787/1" library_version="18">
+<deviceset name="DS2482-100" urn="urn:adsk.eagle:component:13374787/1" library_version="23" library_locally_modified="yes">
 <description>&lt;h1&gt;DS2482-100&lt;/h1&gt;
 Single-Channel 1-Wire Master
 &lt;br&gt;
@@ -1307,16 +1310,16 @@ Single-Channel 1-Wire Master
 <part name="SUPPLY4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="12V" device=""/>
 <part name="GND4" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
-<part name="R_SNS_L" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R1206" device="" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120Ω"/>
-<part name="R_SNS_R" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R1206" device="" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120Ω"/>
-<part name="DS2482-100_L" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DS2482-100" device="" package3d_urn="urn:adsk.eagle:package:13374351/1" value="Left"/>
+<part name="R_SNS_L" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R1206" device="" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120"/>
+<part name="R_SNS_R" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R1206" device="" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120"/>
+<part name="DS2482-100_L" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DS2482-100" device="" package3d_urn="urn:adsk.eagle:package:13374351/1" value="DS2482-100"/>
 <part name="SUPPLY7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND7" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="U$5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DC-DC-STEP-DOWN-LM2596" device="" package3d_urn="urn:adsk.eagle:package:13385955/3"/>
 <part name="SUPPLY8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND8" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="DS2482-100_R" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DS2482-100" device="" package3d_urn="urn:adsk.eagle:package:13374351/1" value="Right"/>
+<part name="DS2482-100_R" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="DS2482-100" device="" package3d_urn="urn:adsk.eagle:package:13374351/1" value="DS2482-100"/>
 <part name="SUPPLY6" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="5V" device=""/>
 <part name="GND5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="GND9" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>

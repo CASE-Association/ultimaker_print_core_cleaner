@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -319,7 +319,7 @@ SCL</text>
 </library>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:13374550/1" library_version="18">
+<package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:13374550/1" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <circle x="-2.7288" y="2.7036" radius="0.25" width="0" layer="21"/>
@@ -609,14 +609,14 @@ Buck</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13374351/1" type="model" library_version="18">
+<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13374351/1" type="model" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOIC127P600X175-8N"/>
 </packageinstances>
 </package3d>
-<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13316051/2" type="model" library_version="18">
+<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:13316051/2" type="model" library_version="23" library_locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.85 X 3.90 X 1.75 mm body
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.85 X 3.90 X 1.75 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -860,13 +860,17 @@ design rules under a new name.</description>
 <elements>
 <element name="CON1" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" package="B10B-EH" package3d_urn="urn:adsk.eagle:package:5644958/2" value="EH_B10B-EH" x="50" y="6" smashed="yes"/>
 <element name="DC_JACK_24V" library="CASE_DC-Connector" library_urn="urn:adsk.eagle:library:8194510" package="WE_694106301002" package3d_urn="urn:adsk.eagle:package:8195584/3" value="WE_694106301002" x="40" y="40" smashed="yes" rot="R270"/>
-<element name="DS2482-100_L" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13374351/1" value="Left" x="45" y="25" smashed="yes" rot="R90"/>
-<element name="DS2482-100_R" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13374351/1" value="Right" x="52" y="25" smashed="yes" rot="R90"/>
+<element name="DS2482-100_L" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13374351/1" value="DS2482-100" x="45" y="25" smashed="yes" rot="R90"/>
+<element name="DS2482-100_R" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13374351/1" value="DS2482-100" x="52" y="25" smashed="yes" rot="R90"/>
 <element name="M1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="ARDUINO-NANO-3.0" package3d_urn="urn:adsk.eagle:package:13392320/4" value="ARDUINO-NANO-3.0" x="80" y="28" smashed="yes" rot="R270"/>
-<element name="R_SNS_L" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" package="R1206" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120Ω" x="46.5" y="15" smashed="yes" rot="R90"/>
-<element name="R_SNS_R" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" package="R1206" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120Ω" x="53.5" y="15" smashed="yes" rot="R90"/>
-<element name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13316051/2" value="DMG4496SSS" x="40" y="15" smashed="yes" rot="R270"/>
-<element name="U$2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13316051/2" value="DMG4496SSS" x="60" y="15" smashed="yes" rot="R270"/>
+<element name="R_SNS_L" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" package="R1206" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120" x="46.5" y="15" smashed="yes" rot="R90"/>
+<element name="R_SNS_R" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" package="R1206" package3d_urn="urn:adsk.eagle:package:5332308/3" value="120" x="53.5" y="15" smashed="yes" rot="R90"/>
+<element name="U$1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13316051/2" value="DMG4496SSS" x="40" y="15" smashed="yes" rot="R270">
+<attribute name="VENDOR" value="RS" x="40" y="15" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="U$2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="SOIC127P600X175-8N" package3d_urn="urn:adsk.eagle:package:13316051/2" value="DMG4496SSS" x="60" y="15" smashed="yes" rot="R270">
+<attribute name="VENDOR" value="RS" x="60" y="15" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="U$5" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" package="DC-DC-STEP-DOWN-LM2596" package3d_urn="urn:adsk.eagle:package:13385955/3" value="DC-DC-STEP-DOWN-LM2596" x="20" y="25" smashed="yes" rot="R270"/>
 <element name="BUTTON" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" package="B2B-EH" package3d_urn="urn:adsk.eagle:package:5644950/1" value="EH_B2B-EH" x="93.15" y="18.01" smashed="yes" rot="R90"/>
 <element name="I2C" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" package="B4B-EH" package3d_urn="urn:adsk.eagle:package:5644952/1" value="EH_B4B-EH" x="92.95" y="31.29" smashed="yes" rot="R90"/>
@@ -892,6 +896,10 @@ design rules under a new name.</description>
 <vertex x="40.2" y="7.3"/>
 <vertex x="37.5" y="10"/>
 </polygon>
+<wire x1="40.635" y1="12.5266" x2="41.905" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="39.365" y1="12.5266" x2="40.635" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="38.095" y1="12.5266" x2="39.365" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="41.25" y1="6" x2="41.905" y2="12.5266" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA_L">
 <contactref element="CON1" pad="3"/>
@@ -932,6 +940,10 @@ design rules under a new name.</description>
 <vertex x="62.6" y="10"/>
 <vertex x="62.6" y="13.9"/>
 </polygon>
+<wire x1="60.635" y1="12.5266" x2="61.905" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="59.365" y1="12.5266" x2="60.635" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="58.095" y1="12.5266" x2="59.365" y2="12.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="58.75" y1="6" x2="59.365" y2="12.5266" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="24V">
 <contactref element="DC_JACK_24V" pad="1"/>
@@ -990,6 +1002,26 @@ design rules under a new name.</description>
 <contactref element="U$5" pad="OUT-"/>
 <contactref element="BUTTON" pad="2"/>
 <contactref element="I2C" pad="2"/>
+<wire x1="93.15" y1="19.26" x2="92.95" y2="30.04" width="0" layer="19" extent="1-1"/>
+<wire x1="87.62" y1="17.84" x2="93.15" y2="19.26" width="0" layer="19" extent="1-1"/>
+<wire x1="72.38" y1="12.76" x2="87.62" y2="17.84" width="0" layer="19" extent="1-1"/>
+<wire x1="61.905" y1="17.4734" x2="72.38" y2="12.76" width="0" layer="19" extent="1-1"/>
+<wire x1="60.635" y1="17.4734" x2="61.905" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="59.365" y1="17.4734" x2="60.635" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="52.635" y1="22.5266" x2="59.365" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="51.365" y1="27.4734" x2="52.635" y2="22.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="44.365" y1="27.4734" x2="51.365" y2="27.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="43.095" y1="27.4734" x2="44.365" y2="27.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="45.635" y1="22.5266" x2="44.365" y2="27.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="41.905" y1="17.4734" x2="45.635" y2="22.5266" width="0" layer="19" extent="1-1"/>
+<wire x1="40.635" y1="17.4734" x2="41.905" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="39.365" y1="17.4734" x2="40.635" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="40" y1="40" x2="43.095" y2="27.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="44.75" y1="42.75" x2="40" y2="40" width="0" layer="19" extent="1-1"/>
+<wire x1="48.75" y1="6" x2="41.905" y2="17.4734" width="0" layer="19" extent="1-1"/>
+<wire x1="51.25" y1="6" x2="48.75" y2="6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.25" y1="45" x2="40" y2="40" width="0" layer="19" extent="1-1"/>
+<wire x1="11.25" y1="5" x2="39.365" y2="17.4734" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="U$5" pad="OUT+"/>

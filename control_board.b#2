@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:Ey-6O5pDQCC0H-7UfAduFg" pcbguid="5454c21c-5d3c-4296-8600-c0a5ad4fafd5" lastpulledtime="" lastsyncedchangeguid="a38bac86-78aa-6534-16b3-2dc3d7d6f58d"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwODI5MjExNDI2ODU2" f3durn="urn:adsk.wipprod:dm.lineage:Ey-6O5pDQCC0H-7UfAduFg" pcbguid="5454c21c-5d3c-4296-8600-c0a5ad4fafd5" lastpulledtime="" lastsyncedchangeguid="7bbb8bda-81fc-9ff5-efa1-a771f013e38c"/>
 <plain>
 <wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
 <wire x1="100" y1="0" x2="100" y2="50" width="0" layer="20"/>
@@ -203,8 +203,8 @@ SDA
 SCL</text>
 <text x="97.33" y="18.03" size="1.27" layer="21" font="vector" ratio="15" distance="100" rot="R180" align="center">GND
 5V</text>
-<text x="89.91" y="18.05" size="1.27" layer="21" font="vector" ratio="15" distance="100" rot="R90" align="center">Button</text>
-<text x="89.68" y="31.28" size="1.27" layer="21" font="vector" ratio="15" distance="100" rot="R90" align="center">I2C</text>
+<text x="92.99" y="22.89" size="1.27" layer="21" font="vector" ratio="15" distance="100" rot="R180" align="center">Button</text>
+<text x="92.96" y="38.75" size="1.27" layer="21" font="vector" ratio="15" distance="100" rot="R180" align="center">I2C</text>
 </plain>
 <libraries>
 <library name="CASE-JST" urn="urn:adsk.eagle:library:5637561">
